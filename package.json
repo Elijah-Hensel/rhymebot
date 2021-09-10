@@ -4,7 +4,8 @@
   "description": "Discord bot for SitePoint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script:test": "nodemon index.js"
   },
   "author": "Michiel Mulders",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "axios": "^0.21.4",
     "discord-youtube-api": "^0.1.0",
     "discord.js": "^13.1.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.12"
   }
 }
