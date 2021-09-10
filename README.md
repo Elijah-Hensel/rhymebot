@@ -13,7 +13,7 @@ RhymeBot is a discord bot with the intent to return to the user words that rhyme
 2. Run `npm install`
 3. Add Discord and [DictionaryAPI Collegiate Thesaurus](https://dictionaryapi.com) credentials in a `.env` file
 3. Run `node index.js`
-4. Interact with your Discord bot via your web browser
+4. Begin interacting with your Discord bot via your web browser with "!commands"
 
 ## License
 
