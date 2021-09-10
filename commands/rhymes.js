@@ -37,7 +37,7 @@ async function mapRhymes(args) {
 }
 
 module.exports = {
-  name: "!rhyme",
+  name: "!rhy",
   description: "simple rhyme generator",
   async execute(msg, args) {
     try {

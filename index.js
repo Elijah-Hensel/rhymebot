@@ -1,11 +1,7 @@
 require("dotenv").config();
 const { Client, Intents, Collection } = require("discord.js");
 const bot = new Client({
-  intents: [
-    Intents.FLAGS.GUILDS,
-    Intents.FLAGS.GUILD_MESSAGES,
-    // Intents.FLAGS.GUILD_MEMBERS,
-  ],
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 bot.commands = new Collection();
 const botCommands = require("./commands");
@@ -19,8 +15,6 @@ bot.login(TOKEN);
 
 bot.on("ready", () => {
   console.info(`Logged in as ${bot.user.tag}!`);
-  // var channel = bot.channels.get('832783478269411360');
-  // channel.sendMessage("**Hello! I am the Rhyme-Bottapatamous and my rhymes-schemes are bottomless**\n```To use my magical rhymetastical abilities, insert with ease a word if you'd please \n !rhyme <word>```");
 });
 
 bot.on("message", (msg) => {
