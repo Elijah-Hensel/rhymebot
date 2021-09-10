@@ -4,8 +4,6 @@ const { MessageEmbed } = require("discord.js");
 let rhymes = [];
 
 async function getRhyme(args) {
-  console.log(rhymes, "PRE FETCH");
-
   try {
     const { data } = await axios.get(
       `https://api.datamuse.com/words?rel_rhy=${args}`
@@ -44,8 +42,6 @@ module.exports = {
   async execute(msg, args) {
     try {
       await mapRhymes(args);
-
-      console.log(rhymes, "POST FETCH");
 
       if (rhymes.length < 1) {
         msg.reply(`Could not retrieve words that rhyme with ${args}`);
